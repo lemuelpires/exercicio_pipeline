@@ -1,3 +1,4 @@
+// index.test.js
 const multiplicacao = require('../src/index.js');
 
 describe('Multiplicação', () => {
@@ -7,4 +8,5 @@ describe('Multiplicação', () => {
     expect(multiplicacao(0, 10)).toBe(0);
   });
 });
+
 

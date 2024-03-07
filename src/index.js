@@ -1,9 +1,17 @@
-// index.js
-function multiplicacao(a, b) {
+/*function multiplicacao(a, b) {
+  return a * b;
+}
+
+module.exports = multiplicacao;*/
+function multiplicacao() {
+  // Obter os valores dos números de entrada
+  var a = document.getElementById('a').value;
+  var b = document.getElementById('a').value;
+
   // Verificar se ambos os campos foram preenchidos
   if (a === '' || b === '') {
-    alert('Por favor, insira ambos os números.');
-    return;
+      alert('Por favor, insira ambos os números.');
+      return;
   }
 
   // Calcular a multiplicação
@@ -11,5 +19,5 @@ function multiplicacao(a, b) {
 
   // Exibir o resultado
   document.getElementById('resultado').innerText = 'Resultado: ' + resultado;
-  return resultado;
 }
+module.exports = multiplicacao;
